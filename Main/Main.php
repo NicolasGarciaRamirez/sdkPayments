@@ -3,12 +3,13 @@ use './Traits/ApiTrait';
 
 class Main {
 
-	use ApiTrait;.
+	use ApiTrait;
 
     private $api_key;
     private $base_url = env('API_URL');
 
-    public function __construct($api_key) {
+    public function __construct($api_key) 
+	{
         $this->api_key = $api_key;
     }
 
